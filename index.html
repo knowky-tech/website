@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Knowky</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="bunny.png" />
+
     <!-- Coiny from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +15,7 @@
 
     <style>
       :root{
-        --brand-blue:#FFFFF;
+        --brand-blue:#ffffff; /* fixed typo (#FFFFF isn’t valid) */
       }
       *{ box-sizing:border-box; }
       html,body{ height:100%; }
@@ -37,7 +40,7 @@
         aspect-ratio:1/1;
         display:grid;
         place-items:center;
-        overflow:visible; /* allow text overlap */
+        overflow:visible;
         position:relative;
       }
       .logo img{ width:100%; height:auto; display:block; }
@@ -45,7 +48,7 @@
         font-family:"Coiny", system-ui, sans-serif;
         font-size: clamp(32px, 8vw, 72px);
         line-height:1.1;
-        margin-top:-30px; /* overlap text upward into mascot space */
+        margin-top:-30px;
         margin-bottom:0;
         color:#21A5FD;
         text-shadow: 0 2px 8px rgba(0,0,0,.25);
@@ -55,12 +58,11 @@
       .bottom-section{
         text-align:center;
         margin-bottom:40px;
-        margin-top: -70px;
+        margin-top:-70px;
       }
-        
       .launching{
         font-family:"Coiny", system-ui, sans-serif;
-        font-size: clamp(80px, 5vw, 36px);
+        font-size: clamp(36px, 5vw, 80px);
         color:#F49F01;
         text-shadow: 0 0px 0px rgba(116, 41, 41, 0.25);
       }
